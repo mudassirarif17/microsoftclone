@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Microsoft</title>
+</head>
+<body>
+    <navbar class="flex justify-between items-center h-16 md:justify-around">
+
+    <div class="md:order-2 md:hidden hamburger mx-4 flex">
+        <div id="bars" class="bars md:hidden"><i class="visible fa-solid fa-bars text-2xl "></i></div>
+        <div id="cross" class="cross md:hidden"><i class="fa-solid fa-xmark text-2xl"></i></div>
+        <div class="search md:hidden"><i class="fa-solid fa-magnifying-glass text-2xl mx-2"></i></div>
+    </div>
+
+    <div class="logo md:order-1"><img class="w-32" src="./img/logo.png" alt=""></div>
+
+    <div class="cart mx-4 flex md:order-3">
+        <div class="search hidden md:block"><i class="fa-solid fa-magnifying-glass text-2xl mx-2"></i></div>
+        <div class="cart"><i class="fa-solid fa-cart-shopping text-2xl mx-2"></i></div>
+        <div class="user"><i class="fa-regular fa-circle-user text-2xl"></i></div>
+    </div>
+
+    </navbar>
+
+    <script src="./app.js"></script>
+</body>
+</html>
