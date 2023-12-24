@@ -9,25 +9,35 @@
     <title>Microsoft</title>
 </head>
 <body>
-    <navbar class="flex justify-between items-center h-16 md:justify-around bg-white">
+    <navbar class="my-0.5 flex justify-between items-center h-16 md:justify-around bg-white shadow-sm shadow-gray-600">
 
     <div class="md:order-2 md:hidden hamburger mx-4 flex">
         <div id="bars" class="bars md:hidden"><i class="visible fa-solid fa-bars text-2xl "></i></div>
-        <div id="cross" class="cross md:hidden"><i class="fa-solid fa-xmark text-3xl"></i></div>
+        <div id="cross" class="cross md:hidden "><i class="fa-solid fa-xmark text-2xl"></i></div>
         <div class="search md:hidden"><i class="fa-solid fa-magnifying-glass text-2xl mx-2"></i></div>
     </div>
 
-    <div class="logo md:order-1 "><img class="w-32" src="./img/logo.png" alt=""></div>
+    <div class="logo md:order-1 flex">
+        <img class="w-32" src="./img/logo.png" alt="">
+        <ul class="main-menu hidden md:flex space-x-5 text-gray-700">
+            <li></li>
+            <li><a href="">Microsoft 365</a></li>
+            <li><a href="">Office</a></li>
+            <li><a href="">Copilot</a></li>
+            <li><a href="">Windows</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+    </div>
 
-    <div class="cart mx-4 flex md:order-3 ">
+    <div class="cart mx-4 flex md:order-3">
         <div class="search hidden md:block"><i class="fa-solid fa-magnifying-glass text-2xl mx-2"></i></div>
         <div class="cart"><i class="fa-solid fa-cart-shopping text-2xl mx-2"></i></div>
         <div class="user"><i class="fa-regular fa-circle-user text-2xl"></i></div>
     </div>
 
-    <ul id="menu" class="menu absolute flex-col top-16 bg-gray-200 w-full h-64 space-y-6 space-x-4 md:hidden -z-10">
+    <ul id="menu" class="menu absolute flex-col top-16 bg-gray-200 w-full h-64 space-y-6 space-x-4 md:hidden">
         <li></li>
-        <li><a href="">Microsoft 365</a></li>
+        <li><a class="" href="">Microsoft 365</a></li>
         <li><a href="">Office</a></li>
         <li><a href="">Copilot</a></li>
         <li><a href="">Windows</a></li>
@@ -35,6 +45,127 @@
     </ul>
 
     </navbar>
+
+    <!-- main  -->
+    <div class="main w-[96%] md:bg-blue-200 mx-auto shadow-lg shadow-gray-300 md:w-full md:flex md:flex-row-reverse">
+
+        <div class="w-full md:w-[50%]" class="top"><img class="md:h-[87vh]" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Bing-AI-Open-Preview:VP2-859x540" alt=""></div>
+
+        <div class="down md:bg-blue-200 bg-white h-56 space-x-4 space-y-4 w-full md:w-[40%] md:flex-col md:my-auto">
+            <span></span>
+            <h1 class="text-2xl font-semibold">Maximise the everyday with Microsoft 365</h1>
+            <p class="text-gray-700">Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.</p>
+            <button class="bg-blue-600 text-white px-4 py-2 font-semibold rounded-sm">For one person</button>
+        </div>
+
+    </div>
+
+    <!-- navigator button -->
+    <div class="my-20"></div>
+
+
+    <!-- cards -->
+    <div class="cards flex flex-col md:flex-row md:space-x-3 md:mx-8">
+
+        <div class="card-1 px-2 w-full md:w-1/4">
+            <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDnc6KxFvnjnpojjlAxc1XxZgioKNDMB_4A&usqp=CAU" alt="">
+            <h1 class="text-2xl font-semibold my-2">Designed for life todays - and tomorrow</h1>
+            <p class="text-gray-800 text-sm my-2">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
+            <p class="text-blue-700 font-semibold text-md my-6">See if your PC is ready > </p>
+        </div>
+
+        <div class="card-1 px-2 w-full md:w-1/4">
+            <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDnc6KxFvnjnpojjlAxc1XxZgioKNDMB_4A&usqp=CAU" alt="">
+            <h1 class="text-2xl font-semibold my-2">Microsoft Edge</h1>
+            <p class="text-gray-800 text-sm my-2">World-class performance with more privacy, more productivity and more value while you browse.</p>
+            <p class="text-blue-700 font-semibold text-md my-6">Download now > </p>
+        </div>
+
+        <div class="card-1 px-2 w-full md:w-1/4">
+            <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDnc6KxFvnjnpojjlAxc1XxZgioKNDMB_4A&usqp=CAU" alt="">
+            <h1 class="text-2xl font-semibold my-2">Microsoft One Drive</h1>
+            <p class="text-gray-800 text-sm my-2">Save your files and photos to OneDrive and access them from any device, anywhere.</p>
+            <p class="text-blue-700 font-semibold text-md my-6">Learn more > </p>
+        </div>
+
+        <div class="card-1 px-2 w-full md:w-1/4">
+            <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDnc6KxFvnjnpojjlAxc1XxZgioKNDMB_4A&usqp=CAU" alt="">
+            <h1 class="text-2xl font-semibold my-2">OneNote</h1>
+            <p class="text-gray-800 text-sm my-2">Organize your notes & your life</p>
+            <p class="text-blue-700 font-semibold text-md my-6">Learn more > </p>
+        </div>
+
+    </div> 
+
+    <!-- Outlook for ios & android -->
+    <div class="after-card bg-gray-200 mx-4 flex flex-col md:flex-row-reverse md:h-[80vh] md:mx-10 md:items-center md:justify-center">
+
+        <div class="after-1 flex justify-center md:w-1/6 md:h-full md:justify-end md:items-end">
+            <img class="w-36 mt-6 md:w-44" src="https://cdn.ttgtmedia.com/rms/onlineimages/image_3_microsoft_outlook_mobile_inbox_half_column_mobile.png" alt="">
+        </div>
+
+        <div class="after-2 bg-white py-10 md:bg-gray-200 md:w-1/2">
+            <h1 class="text-2xl font-semibold my-2 md:text-3xl">Outlook for iOS and Android</h1>
+            <p class="my-2 text-sm">Connect Organise Get things done</p>
+            <button class="bg-blue-600 text-white px-4 py-2 font-semibold my-2 rounded-sm">Download now</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer bg-gray-200 flex-col py-10 md:flex md:flex-row my-20">
+        <div class="col-1 space-x-8 space-y-5">
+            <span></span>
+            <h1 class="text-md font-semibold">Microsoft Store</h1>
+            <p class="text-gray-700 text-sm">Account Profile</p>
+            <p class="text-gray-700 text-sm">Download Center</p>
+            <p class="text-gray-700 text-sm">Returns</p>
+            <p class="text-gray-700 text-sm">Order Tracking</p>
+        </div>
+        <div class="col-1 space-x-8 space-y-5">
+            <span></span>
+            <h1 class="text-md font-semibold">Education</h1>
+            <p class="text-gray-700 text-sm">Microsoft in Education</p>
+            <p class="text-gray-700 text-sm">Devices for Education</p>
+            <p class="text-gray-700 text-sm">Microsoft teams for Education</p>
+            <p class="text-gray-700 text-sm">Microsoft 365 Education</p>
+            <p class="text-gray-700 text-sm">Office Education</p>
+            <p class="text-gray-700 text-sm">Educator training & development</p>
+            <p class="text-gray-700 text-sm">Deals for students & parents</p>
+            <p class="text-gray-700 text-sm">Azure for student</p>
+        </div>
+        <div class="col-1 space-x-8 space-y-5">
+            <span></span>
+            <h1 class="text-md font-semibold text-gray-700">Business</h1>
+            <p class="text-gray-700 text-sm">Microsoft cloud</p>
+            <p class="text-gray-700 text-sm">Microsoft security</p>
+            <p class="text-gray-700 text-sm">Azure</p>
+            <p class="text-gray-700 text-sm">Dynamic 365</p>
+            <p class="text-gray-700 text-sm">Microsoft 365</p>
+            <p class="text-gray-700 text-sm">Microsoft advertising</p>
+            <p class="text-gray-700 text-sm">Microsoft industry</p>
+            <p class="text-gray-700 text-sm">Microsoft team</p>
+        </div>
+        <div class="col-1 space-x-8 space-y-5">
+            <span></span>
+            <h1 class="text-md font-semibold text-gray-700">Developer & IT</h1>
+            <p class="text-gray-700 text-sm">Documentation</p>
+            <p class="text-gray-700 text-sm">Developer center</p>
+            <p class="text-gray-700 text-sm">Microsoft learn</p>
+            <p class="text-gray-700 text-sm">Microsoft tech community</p>
+            <p class="text-gray-700 text-sm">Azure marketing</p>
+            <p class="text-gray-700 text-sm">App Source</p>
+            <p class="text-gray-700 text-sm">Visual Studio</p>
+        </div>
+        <div class="col-1 space-x-8 space-y-5">
+            <span></span>
+            <h1 class="text-md font-semibold text-gray-700">Company</h1>
+            <p class="text-gray-700 text-sm">Carrer</p>
+            <p class="text-gray-700 text-sm">About Microsoft</p>
+            <p class="text-gray-700 text-sm">Company News</p>
+            <p class="text-gray-700 text-sm">Investors</p>
+            <p class="text-gray-700 text-sm">Privacy at Microsoft</p>
+        </div>
+    </div>
 
     <script src="./app.js"></script>
 </body>
